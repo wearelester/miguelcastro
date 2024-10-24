@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel Castro | Proyectos</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@300&display=swap');
         
         body {
             font-family: 'Space Mono', monospace;
-            font-weight: 200;
+            font-weight: 300;
             background: #ffffff;
             color: #000000;
             margin: 0;
@@ -35,10 +35,11 @@
             border-bottom: 1px solid #ddd;
             transition: color 0.3s;
             word-wrap: break-word;
+            font-weight: 300;
         }
 
         th {
-            font-weight: bold;
+            font-weight: 300;
         }
 
         tr:hover td {
@@ -46,8 +47,8 @@
         }
 
         .dots {
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             background: #000;
             border-radius: 50%;
             display: inline-block;
@@ -57,34 +58,41 @@
         .tag {
             color: #000;
         }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            th:nth-child(n+3), td:nth-child(n+3) {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>More Research</h1>
+    <h1>Proyectos</h1>
     <table>
         <thead>
             <tr>
-                <th><span class="dots"></span> Idea</th>
-                <th><span class="dots"></span> Marca</th>
-                <th><span class="dots"></span> Etapa</th>
-                <th><span class="dots"></span> Reconocimiento</th>
-                <th><span class="dots"></span> Año</th>
+                <th><span class="dots"></span> IDEA</th>
+                <th><span class="dots"></span> MARCA</th>
+                <th><span class="dots"></span> ETAPA</th>
+                <th><span class="dots"></span> PREMIOS</th>
+                <th><span class="dots"></span> AÑO</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td data-label="Idea">MouthPadˆ</td>
-                <td data-label="Marca" class="tag">Augmental</td>
-                <td data-label="Etapa">Desarrollada</td>
-                <td data-label="Reconocimiento">Cannes Lions Innovación - Grand Prix</td>
-                <td data-label="Año">2023</td>
+                <td data-label="IDEA">MouthPadˆ</td>
+                <td data-label="MARCA" class="tag">Augmental</td>
+                <td data-label="ETAPA">Desarrollada</td>
+                <td data-label="PREMIOS">Cannes Lions Innovación - Grand Prix</td>
+                <td data-label="AÑO">2023</td>
             </tr>
             <tr>
-                <td data-label="Idea">Vanishing Emails</td>
-                <td data-label="Marca" class="tag">Amazon Web Services</td>
-                <td data-label="Etapa">Desarrollada</td>
-                <td data-label="Reconocimiento">Cannes Lions Innovación - Bronce</td>
-                <td data-label="Año">2024</td>
+                <td data-label="IDEA">Vanishing Emails</td>
+                <td data-label="MARCA" class="tag">Amazon Web Services</td>
+                <td data-label="ETAPA">Desarrollada</td>
+                <td data-label="PREMIOS">Cannes Lions Innovación - Bronce</td>
+                <td data-label="AÑO">2024</td>
             </tr>
             <!-- Add more rows as needed -->
         </tbody>
