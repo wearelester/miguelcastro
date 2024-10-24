@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Table</title>
+    <title>Miguel Castro | Proyectos</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@200&display=swap');
         
         body {
             font-family: 'Space Mono', monospace;
-            font-weight: 300;
+            font-weight: 200;
             background: #ffffff;
             color: #000000;
             margin: 0;
@@ -33,7 +33,8 @@
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid #ddd;
-            transition: background-color 0.3s, color 0.3s;
+            transition: color 0.3s;
+            word-wrap: break-word;
         }
 
         th {
@@ -41,8 +42,7 @@
         }
 
         tr:hover td {
-            background-color: #ff7714;
-            color: #ffffff;
+            color: #ff7714;
         }
 
         .dots {
@@ -73,18 +73,18 @@
         </thead>
         <tbody>
             <tr>
-                <td>MouthPadˆ</td>
-                <td class="tag">Augmental</td>
-                <td>Desarrollada</td>
-                <td>Cannes Lions Innovación - Grand Prix</td>
-                <td>2023</td>
+                <td data-label="Idea">MouthPadˆ</td>
+                <td data-label="Marca" class="tag">Augmental</td>
+                <td data-label="Etapa">Desarrollada</td>
+                <td data-label="Reconocimiento">Cannes Lions Innovación - Grand Prix</td>
+                <td data-label="Año">2023</td>
             </tr>
             <tr>
-                <td>Vanishing Emails</td>
-                <td class="tag">Amazon Web Services</td>
-                <td>Desarrollada</td>
-                <td>Cannes Lions Innovación - Bronce</td>
-                <td>2024</td>
+                <td data-label="Idea">Vanishing Emails</td>
+                <td data-label="Marca" class="tag">Amazon Web Services</td>
+                <td data-label="Etapa">Desarrollada</td>
+                <td data-label="Reconocimiento">Cannes Lions Innovación - Bronce</td>
+                <td data-label="Año">2024</td>
             </tr>
             <!-- Add more rows as needed -->
         </tbody>
